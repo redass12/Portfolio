@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-
+:root {
+    --main-color: #000000;
+    --secondary-color: #03b555;
+}
 *
 {
     margin: 0;
@@ -18,7 +21,8 @@ section
 {
     position: relative;
     min-height: 100vh;
-    background-color: #000000;
+    /*background-color: #000000;*/
+    background-color: var(--main-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,7 +50,8 @@ section
 }
 .btn{
     position: relative;
-    background : #2196f3;
+    /*background : #2196f3;*/
+    background: var(--secondary-color);
     display:inline-block;
     color: #ffffff;
     margin-top: 20px;
@@ -83,6 +88,7 @@ header .logo
     text-decoration: none;
     font-weight: 700;
     letter-spacing: 2px;
+    padding: 10px;
 }
 header.sticky .logo{
     color: #111;
@@ -95,6 +101,7 @@ header ul
 header ul li {
     position: relative;
     list-style: none;
+    padding: 10px;
 }
 header ul li a {
     position: relative;
@@ -106,6 +113,14 @@ header ul li a {
 header.sticky ul li a {
     color: #111111;
 }
+.brdBtn {
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+}
+
+.brdBtn a {
+    color: var(--secondary-color);
+}
 .heading
 {
     width:100% ;
@@ -116,6 +131,10 @@ header.sticky ul li a {
 .heading h2 {
     font-weight:600;
     font-size: 30px;
+}
+.img {
+    width: 400px;
+
 }
 .content
 {

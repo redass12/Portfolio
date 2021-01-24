@@ -6,6 +6,7 @@
     <title>My portfolio</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://unpkg.com/pattern.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -17,6 +18,7 @@
                 <li><a href="#experiences" onclick="toggleMenu();">Experiences</a></li>
                 <li><a href="#work" onclick="toggleMenu();">Work</a></li>
                 <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+                <li class="brdBtn"><a href="#" >Resume</a></li>
             </ul>
     </header>
     <section class="banner" id="home">
@@ -30,6 +32,7 @@
         <div class="heading">
             <h2>About Me</h2>
         </div>
+        <div class="centerElement">
         <div class="content">
             <div class="contentBx w50">
                 <h3>I'm a Software engineer</h3>
@@ -39,9 +42,12 @@
                 </p>
             </div>
             <div class="w50">
-                <img src="./profilemd.jpg" alt="Portfolio image">
+                <div class="pattern-diagonal-lines-sm gray-lighter img">
+                    <img src="./profilemd.jpg" alt="Portfolio image" style="transform:translate(30px, 30px);">
+                </div>
             </div>
         </div>
+    </div>
     </section>
     <!-- Experiences -->
     <section class="Experiences" id="experiences">
